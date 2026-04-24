@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import Payment from "./pages/Payment";
+
 
 function App() {
   return (

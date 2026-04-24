@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Cart from "./Cart";
 
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import menuIcon from "../assets/icon/menu.png";
 import searchIcon from "../assets/icon/searchblack.png";
@@ -32,6 +33,7 @@ function Home() {
             <h1 className="product-title">Alle varer</h1>
 
             <ProductGrid products={products} />
+            <Footer />
         </div>
     </div>
 </div>);

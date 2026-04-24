@@ -38,7 +38,6 @@ const products = [
     price: "-",
     details: "placeholder"
     }
-    
 ];
 
 

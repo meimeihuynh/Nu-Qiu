@@ -17,6 +17,14 @@
   display: block;
 }
 
+hr {
+  border: none;
+  width: 330.002px;
+  height: 1px;
+  background: #000;
+  position: relative;
+}
+
 .logo {
   position: absolute  ;
   width: auto;
@@ -64,6 +72,7 @@ h1 {
   line-height: normal;
   text-align: center;
 }
+
 
 h1.product-title {
   color: #000;
@@ -126,8 +135,21 @@ h1.product-title {
 .product-price {
   margin: 6px 0;
   font-weight: bold;
+  font-size: 16px;
 }
 
+p {
+    margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: light;
+  align-self: stretch;
+}
 .add-btn {
   margin-top: 8px;
   padding: 8px 12px;
@@ -161,9 +183,55 @@ bottom: 4px;
   height: 120px;
   display: flex;
   flex-direction: column;
+  
 }
 
 
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 999;
+}
+
+
+/* cart page */
+
+.cart-page {
+  padding: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cart-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-weight: bold;
+}
 
 /* Mobile Layout */
 .app-container {
@@ -177,3 +245,4 @@ bottom: 4px;
   min-height: 100vh;
   overflow-y: auto;
 }
+

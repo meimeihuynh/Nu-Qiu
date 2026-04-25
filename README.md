@@ -19,3 +19,4 @@ Målet med nettsiden er å gi en semi-realistisk nettbutikk-opplevelse, der bruk
 
 
 
+

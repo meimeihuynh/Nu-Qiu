@@ -30,6 +30,8 @@ function Home() {
                 />
             </div>
 
+            <hr></hr>
+
             <h1 className="product-title">Alle varer</h1>
 
             <ProductGrid products={products} />

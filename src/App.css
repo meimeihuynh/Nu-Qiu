@@ -161,11 +161,11 @@ p {
   height: 28px;
 }
 
+
 .cart-icon {
 width: 20px;
 height: 20px;
 aspect-ratio: 1/1;
-position: absolute;
 position: absolute;
 left: 83px;
 bottom: 4px;
@@ -183,7 +183,6 @@ bottom: 4px;
   height: 120px;
   display: flex;
   flex-direction: column;
-  
 }
 
 
@@ -204,7 +203,7 @@ bottom: 4px;
 /* cart page */
 
 .cart-page {
-  padding: 20px;
+
 }
 
 .cart-items {
@@ -232,6 +231,62 @@ bottom: 4px;
   margin-top: 20px;
   font-weight: bold;
 }
+
+.dlt-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  right: 25px;
+  position: absolute;
+}
+
+.dlt-icon {
+  width: 24px;
+  height: 24px;
+  background: none;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: black;
+  cursor: pointer;
+  width: 186px;
+  height: 28px; 
+}
+
+.continue-btn {
+  background: url(./assets/rainbowbox.png) lightgray 50% / cover no-repeat;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 186px;
+  height: 28px; 
+}
+
+.continue-text {
+  color:#000000;
+  font-family: Inter;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.checkout-text {
+  color:#ffffff;
+  font-family: Inter;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-acions {
+  
+} 
 
 /* Mobile Layout */
 .app-container {

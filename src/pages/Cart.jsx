@@ -6,13 +6,17 @@ import searchIcon from "../assets/icon/searchblack.png";
 import userIcon from "../assets/icon/user.png";
 import cartIcon from "../assets/icon/cartblack.png";
 import { useCart } from "../context/CartContext";
+import bin from "../assets/icon/bin.png";
+
+import { useNavigate } from "react-router-dom";
 
 
 function Cart() {
+  const navigate = useNavigate(); 
 
-  const { cart } = useCart();
+  const { cart, removeFromCart } = useCart();
 
-  // total price calculation
+  // price calculation
   const total = cart.reduce((sum, item) => {
     return sum + item.price * item.quantity;
   }, 0);
@@ -31,7 +35,11 @@ function Cart() {
                     cartIcon={cartIcon}
                 />
             </div> 
+
             <div className="cart-page"></div>
+
+                <hr></hr>
+
                 <h1>Your Cart</h1>
 
                     {cart.length === 0 ? (
@@ -50,12 +58,27 @@ function Cart() {
                                 <p>Qty: {item.quantity}</p>
                                 </div>
 
+                                <button className="dlt-btn" onClick={() => removeFromCart(item.id)}>
+                                    <img src={bin} alt="delete" className="dlt-icon" />
+                                </button>
                             </div>
                             ))}
                         </div>
 
                         <div className="cart-total">
                             <h2>Total: {total} kr</h2>
+
+
+                            <div className="cart-actions">
+                            <button className="continue-btn" onClick={() => navigate("/")}>
+                                <div className="continue-text">Continue Shopping</div> 
+                            </button>
+                            
+                            <button className="checkout-btn" onClick={() => navigate("/Checkout")}>
+                                <div className="checkout-text">Proceed to Checkout</div> 
+                            </button>
+                            </div>
+
                         </div>
                         </>
                     )}

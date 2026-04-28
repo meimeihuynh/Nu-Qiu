@@ -331,6 +331,7 @@ bottom: 4px;
 }
 
 .phone {
+  width: 430px;
   min-height: 100vh;
   overflow-y: auto;
   position: relative;

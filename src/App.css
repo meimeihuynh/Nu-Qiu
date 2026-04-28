@@ -247,46 +247,79 @@ bottom: 4px;
   cursor: pointer;
 }
 
-.checkout-btn {
-  margin-top: 8px;
+.checkout-btn,
+.continue-btn {
   padding: 8px 12px;
   border: none;
   border-radius: 5px;
-  background: black;
   cursor: pointer;
   width: 186px;
   height: 28px; 
+}
+
+.checkout-btn {
+    background: black;
 }
 
 .continue-btn {
   background: url(./assets/rainbowbox.png) lightgray 50% / cover no-repeat;
-  margin-top: 8px;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 186px;
-  height: 28px; 
 }
 
+.continue-text,
+ .checkout-text {
+  font-family: Inter;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+ }
+ 
 .continue-text {
   color:#000000;
-  font-family: Inter;
-  font-size: 12px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.checkout-text {
-  color:#ffffff;
-  font-family: Inter;
-  font-size: 12px;
-  cursor: pointer;
-  font-weight: bold;
 }
 
-.cart-acions {
+
+.checkout-text {
+  color:#ffffff;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+  margin-top: 20px;  
+  margin-bottom: 20px;      
   
 } 
+
+/* Checkout page */
+
+.pay-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.loading {
+  color: gray;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.success-emote {
+  display: block;
+  margin: auto;
+  width: 175px;
+  height: auto;
+}
 
 /* Mobile Layout */
 .app-container {
@@ -299,5 +332,11 @@ bottom: 4px;
 .phone {
   min-height: 100vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
 }
 

@@ -19,24 +19,27 @@ function Home() {
   return (
   <div className="app-container">
     <div className="phone">
-        <div className="home">
-            <div className="header">
-                <Header
-                    logo={logo}
-                    menuIcon={menuIcon}
-                    searchIcon={searchIcon}
-                    userIcon={userIcon}
-                    cartIcon={cartIcon}
-                />
+            <div className="home">
+                <div className="header">
+                    <Header
+                        logo={logo}
+                        menuIcon={menuIcon}
+                        searchIcon={searchIcon}
+                        userIcon={userIcon}
+                        cartIcon={cartIcon}
+                    />
+                </div>
+                <div className="content">
+
+                <hr></hr>
+
+                <h1 className="product-title">Alle varer</h1>
+
+                <ProductGrid products={products} />
+                
+                </div>
             </div>
-
-            <hr></hr>
-
-            <h1 className="product-title">Alle varer</h1>
-
-            <ProductGrid products={products} />
-            <Footer />
-        </div>
+        <Footer />
     </div>
 </div>);
 }

@@ -36,6 +36,8 @@ function Cart() {
                 />
             </div> 
 
+            <div className="content">
+
             <div className="cart-page"></div>
 
                 <hr></hr>
@@ -82,8 +84,10 @@ function Cart() {
                         </div>
                         </>
                     )}
-                <Footer />
-        </div>
+                
+                </div>
+            </div>
+        <Footer />
     </div>
 </div>);
 }
